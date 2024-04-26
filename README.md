@@ -57,4 +57,4 @@ All features listed here can be disabled or enabled in the config.
 - Options to disable certain game features at specific TPS. Redstone, Elytra, Explosions, Falling Blocks.
 - Bedrock Filler - Option to automatically fill overworld bedrock floor, nether bedrock floor and nether bedrock ceiling.
 - Config options
-- Missing config options will now automatically add themselves with every update without the config resetting.
+- Missing config options will now automatically add themselves with every update without the config resetting
