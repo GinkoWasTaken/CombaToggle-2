@@ -1,60 +1,92 @@
-# 📋 Download here:
-- Download ExploitCore and place in plugins folder.
-- [Click Me](https://download943.mediafire.com/yoi5q56s6seguJ_e7mLYqeJnR9Iuh1e916Ed8su2VxJUYgrqlCGismzrvVyz3NU1M3IIEjnww9AkgxJfL81_V9_OUOHVUiWrjKN15dfA5uf98cL0oi9g4nvQxE0Y9zN-RfKkQ4Ph0haVCoUzHzaSEgqI5TdZlcyPxJ3YWvwTWA/wchpu0mefoexzxc/ExploitCore+v2.5.1.jar)
 
 # 🛑 Requirements
 - ProtocolLib
 
 # ✨ Features
-This list does not include all features, check the config for all features!
+Toggle PvP on/off with a command!
+Block placing lava/fire near players with PvP off!
+(The premium version has even better protection including bed/crystal/anchor explosions)
+Protects you from any kind of PvP including splash potions and TNT!
 
-All features listed here can be disabled or enabled in the config.
+Prevent Combat Log with various punishments!
+Drop inventory, armor or exp, apply a money penalty or kill the player!
+It can also broadcast and log to a file when someone combat logs!
+Combat Tag System!
+Block use of enderpearls, interacting, commands while tagged
+When you enter PvP your nametag will change color/prefix
+(Premium version has support for the TAB plugin)
+The message/action bar will display the person you tagged/tagged you.
+Newbie Protection!
+New players are PvP protected(Or PvE if enabled in config).
+Also can block them from picking up items!
+Disable Fly/GameMode/Disguises/Invisibility on combat!
+Auto Soup!
+Soup is instantly consumed and heals you.
+Anti Border Hopping!
+Players can't run to safe zones while tagged.
+Pushback option supports WorldGuard by simply having the PvP flag as DENY
+Vulnerable option supports most zones including WorldGuard, Factions and Towny.
+Anti Kill Abuse!
+Killing the same player several times over a period of time will trigger a command.
+That command is up to you. Kick, Ban, Warning, etc
+Respawn Protection!
+Stop those spawn killing players for a few seconds
+Money Rewards/Penalties!
+Execute a command on player kill
+Reward money to the killer or take money from the victim
+Steal money from the player you killed
+Optionally do nothing inside certain WorldGuard regions (arenas)
+Other Features
+Blood animation on hit
+Block placing lava/fire near players with PvP disabled
+Block Commands and Enderpearls while in combat
+Block Placing blocks while in combat
+Detects Auto Disconnect hack and still punishes the player
+Transfer a player's drops directly to his killer
+Can be disabled in specific worlds
+Everything is configurable including messages
+Links
+Wiki
+Permissions
+Placeholders
+Development Builds
+Developers API
+Report Bugs
 
-- Prevent NoCom exploit. - Prevent the 'NoCom' coordinate exploit
-- Prevent a new lag exploit where fireworks can bring tps down to single digits.
-- Prevent BowBomb exploit. - Prevent an exploit where bows can instantly kill a player.
-- Prevent Burrow hack - Where you step inside a block so crystals can't do any damage.
-- Prevent BoatFly exploit - Prevent the Futureclient / Rusherhack BoatFly exploit.
-- Prevent Book-ban - All characters still work! The size of each page is just limited to 255 bytes (customizable). This allows to fill the whole page with latin characters. - Characters that use more bytes such as Chinese may be limited in length.
-- Prevent unbreakable Packet elytra fly.
-- Prevent PacketFly exploit.
-- Prevent end gateway crash exploit. - ???
-- Patch end portal dupe. - ???
-- Prevent Y256 dispenser crash exploit. - ???
-- Anti-Illegal system:
-- Remove/revert illegal items: banned items, overstacked items, higher enchanted items, items with illegal datavalues, incompatible enchanted items (eg Silk Touch & Fortune on - the same item), inapplicable enchanted items (unenchantables), Spawneggs and unbreakable items and all shulkers containing them.
-- Remove illegal blocks that have been placed in the world. Supports removal of non-natural spawners too!
-- Limit speed of snowballs to prevent clientside lag.
-- Limit crafting table autorecipe speed to prevent a lag exploit.
-- Prevent all coordinate exploits related to teleporting by vanishing a player right before they are teleported.
-- Prevent destroying end portal frames.
-- Prevent multiple end dragons from being created.
-- Prevent portal traps - Teleport a player back to the original portal if they're trapped for too long.
-- Automatically fill in the bedrock floor/roof if the bedrock has been broken.
-- Prevent players from going below the bedrock floor by teleporting them up. - Useful so people can't elytra fly below the world.
-- Remove wither heads automatically to prevent lag. - Removes on chunk load, unload or after a customizable alive time
-- Option to disable wither spawning at spawn. - Disabled by default.
-- Prevent chunk ban exploit. - Checks how much of each block is in a chunk.
-- Prevent chat spam. - Delay between messages, Max messages per a certain time, separate link delay, character limit, and more!
-- Prevent god mode exploit. - Prevent most godmode exploits, please note, there could still be bypasses.
-- Prevent invalid names. - Disallow login from players with invalid characters/too long of a name.
-- Prevent command signs. - Prevent players from right-clicking signs that have been placed with a command attached. For example, from a backdoor.
-- Limit falling blocks per chunk to prevent lag.
-- Limit exp bottles per chunk to prevent lag.
-- Prevent projectiles from going through portals, shooting projectiles through portals can get them stuck in the same place on the other side, once they are loaded the server can crash.
-- Prevent too many vehicles (eg. minecarts, boats) in chunks.
-- Prevent bed-traps. - Disabled by default. Teleports players back to original location when they have been standing in a portal for too long.
-- Prevent nether roof access. - Disabled by default.
-- Prevent placing blocks on nether roof
-- Option to disable chests on donkeys. - This is unlike IllegalStack's, no items will drop if the chest is broken. Useful to prevent many dupe exploits, Disabled by default.
-- Option to prevent donkeys from going through portals. - Useful to prevent many dupe exploits, disabled by default.
-- Option to mask all kick messages. - Change every kick message to "You have lost connection to the server", or whichever you specify. Disabled by default.
-- Option to enable first join message. - Disabled by default.
-- Command whitelist - Useful for only allowing commands that you want to be allowed, so players can't find your plugins. Disabled by default.
-- Elytra speed limits for old and new chunks, and bursting settings for when tps is high.
-- Elytra action bar to show players the speed they are going and speed limit.
-- Rate-limit levers - Disabled by default. Prevent lag by spamming levers.
-- Options to disable certain game features at specific TPS. Redstone, Elytra, Explosions, Falling Blocks.
-- Bedrock Filler - Option to automatically fill overworld bedrock floor, nether bedrock floor and nether bedrock ceiling.
-- Config options
-- Missing config options will now automatically add themselves with every update without the config resetting
+Commands
+Player Commands (Usually, up to you if you want them to use others)
+/pvp [player] - Toggles PvP
+/pvpstatus - Check your PvP status
+/pvptag - Check time left until out of combat
+/newbie [disable] - Check time left as newbie or disable protection​
+
+Admin Commands
+/pvplist <offline> - List the PvP state of all online or offline players
+/pvpinfo [player] - Shows info about you or other player
+/pvpstatus [player] - Check yours or other player PvP status
+/pvpoverride - Allows player to attack anywhere
+/newbie [add/checktime/remove] - Add/remove newbie protection or check time left
+/pvptag [player] [seconds] - Combat tags a player
+/untag [player] - Untags a player
+/pvpglobal <on|off> - Toggle PvP for the whole server
+/announce - Mainly to be used in the config, can broadcast messages without any prefix
+/pmr - Shows PvPManager help page
+/pmr cleanup- Clean players from database
+/pmr locale- Change your message file to another language
+/pmr reload - Reloads PvPManager
+/pmr worlds - Clickable menu to manage world PvP
+/pmr update - Update PvPManager to latest version​
+
+Aliases:
+/pvp - /togglepvp or /pvptoggle
+/pmr - /pvpmanager or /pvpm​
+
+Permissions
+You can see all permissions here: Full List
+
+PvPManager Premium
+If you have been using PvPManager for a long time you probably know how much it improved since earlier versions, it was the first plugin i ever released on bukkit, many years ago.
+
+I really appreciate it if you have been using my plugin over the years, even if there were times where I was less active. If you wish to support my work, there is a premium version of PvPManager. Think of it as a fork of this version but with improved performance and many extra features and improvements.
+
+If you don't make a profit from your server, this free version is NOT abandoned and will keep receiving updates but don't hesitate to throw me a nice review, it means a lot more than you think!​
